@@ -1,0 +1,97 @@
+.givegreenBackground {
+  background-color: rgb(20, 119, 20);
+}
+
+.giveRedBackground {
+  background-color: rgb(184, 16, 16);
+}
+
+.giveGrayBackgroundColor {
+  background-color: #c2c2c2;
+}
+
+.giveYellowBackgroundColor {
+  background-color: rgb(153, 151, 22);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(245, 245, 245);
+}
+
+.start-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.start-div > h1 {
+  color: #042ad2;
+  font-size: 60px;
+}
+.start-div > button {
+  display: block;
+  background-color: rgb(2, 22, 110);
+  color: rgb(245, 245, 245);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding: 10px 40px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.start-div > button:hover, .start-div > button:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.quiz-div {
+  padding: 30px;
+}
+.quiz-div button {
+  margin-top: 20px;
+  background-color: #5a0808;
+  color: rgb(245, 245, 245);
+  width: 170px;
+  height: 35px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+.quiz-div button:hover, .quiz-div button:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+.quiz-div h5 {
+  color: #e71414;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.quiz-div__questions {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.quiz-div__answers-div > h4 {
+  font-size: 25px;
+  color: #010723;
+}
+.quiz-div__answers-div > div {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.quiz-div__answers-div > div p {
+  cursor: pointer;
+  font-weight: lighter;
+  color: #010c3c;
+  padding: 5px 15px;
+  border-radius: 5px;
+}/*# sourceMappingURL=index.css.map */

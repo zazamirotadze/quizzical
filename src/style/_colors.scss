@@ -1,0 +1,20 @@
+$color-blue : rgb(2, 22, 110);
+$color-red : rgb(184, 16, 16);
+$color-green: rgb(20, 119, 20);
+$color-gray: rgb(245, 245, 245);
+$color-yellow: rgb(153, 151, 22);
+.givegreenBackground{
+    background-color: $color-green;
+  }
+  
+.giveRedBackground{
+    background-color: $color-red;
+}
+  
+.giveGrayBackgroundColor{
+    background-color: darken($color:  $color-gray, $amount: 20);
+}
+
+.giveYellowBackgroundColor{
+    background-color: $color-yellow;
+}

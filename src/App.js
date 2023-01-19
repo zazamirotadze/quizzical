@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import QuizPage from "./QuizPage"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App(){
+    const [startQuiz, setStartQuiz] = React.useState(false)
+  
+    return  <div>{startQuiz? <QuizPage startQuiz={startQuiz} />:
+                <div className="start-div">
+                    <h1>Quizzical</h1>
+                    <button onClick={()=>setStartQuiz(true)} >Start quiz</button>
+                </div>
+             }</div>
 }
-
-export default App;
